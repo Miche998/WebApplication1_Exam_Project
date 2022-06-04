@@ -1,0 +1,179 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo:ital@1&family=Noto+Sans:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  background-image: url("universe.jpeg");
+  background-size: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(0px + 2vmin);
+  font-family: 'Rubik', sans-serif;
+  text-shadow: -2px -2px black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  color: #d3d3d3;
+}
+
+.hovfont{
+  font-family: 'Roboto', sans-serif;
+}
+.bt{
+  text-shadow: none;
+}
+.sub{
+  color: rgba(255, 255, 255, 0.719);
+  font-family: 'Rubik', sans-serif;
+  text-shadow: -0.5px -0.5px grey, 0.5px -0.5px 0 grey, -0.5px 0.5px 0 grey, 0.5px 0.5px 0 grey;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+main {
+  width: 100%;
+}
+
+.survey{
+  background-image: url("universe.jpeg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: calc(10px + 2vmin);
+  color:black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  padding-bottom: 100px;
+}
+
+.below-nav {
+  padding-top: 7rem;
+  padding-left : 5rem;
+}
+
+
+.spin{
+  background-color: black;
+  background-size: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: calc(20px + 2vmin);
+  color:white;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+.spinner-border {
+  font-size: calc(20px + 1vmin);
+}
+
+.login {
+  /* background-color: #282c34; */
+  background-image: url("stars.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  font-family: 'Rubik', sans-serif;
+  text-shadow: -2px -2px black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  color: white;
+}
+
+.questions{
+  background-image: url("universe.jpeg");
+  background-size: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: calc(10px + 1vmin);
+  color:black;
+}
+
+h1 {
+  text-shadow: -1.5px -1.5px black, 1.5px -1.5px 0 black, -1.5px 1.5px 0 black, 1.5px 1.5px 0 black ;
+  color : rgb(136, 5, 136);
+}
+h2 {
+  text-shadow: -1.5px -1.5px black, 1.5px -1.5px 0 black, -1.5px 1.5px 0 black, 1.5px 1.5px 0 black;
+  color : #FF6347;
+}
+
+.hoov:hover{
+  background-color: rgba(136, 5, 136, 0.568);
+}
+.noresp:hover{
+  background-color: rgba(66, 43, 66, 0.76);
+}
+
+.cardbg{
+  background-color: rgb(136, 5, 136);
+  color: rgba(31, 30, 30, 0.726)
+}
+
+.purple-button {
+  background-color: rgb(136, 5, 136);
+}
+
+h5 {
+  color : white;
+}
+
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}

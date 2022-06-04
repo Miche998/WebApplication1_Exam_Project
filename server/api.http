@@ -1,0 +1,106 @@
+### POST SESSION
+
+POST http://localhost:3001/api/sessions 
+Content-Type: application/json  
+
+{"username": "mario", "password": "password1" }
+
+###POST QUESTION 
+//CREATE NEW QUESTIOn
+POST http://localhost:3001/api/question
+Content-Type: application/json
+
+{"title" : "What time is it there?", "type" : "OPEN", "min" : 1, "max" : 1, "sId" : 2}
+
+
+### POST  closed answer 
+//CREATE NEW closed Answer
+POST http://localhost:3001/api/question/3
+Content-Type: application/json
+
+{"type" : "CLOSED" ,"text" : "try"}
+
+
+### POST new user 
+//CREATE NEW user
+POST http://localhost:3001/api/user
+Content-Type: application/json
+
+{"name" : "Luca"}
+
+
+### POST new open answer 
+//CREATE NEW open answer
+POST http://localhost:3001/api/question/2/
+Content-Type: application/json
+
+{"type" : "OPEN","text" : "I'm from Milan"}
+
+
+### POST new relation 
+//CREATE NEW user answer relation
+POST http://localhost:3001/api/answer
+Content-Type: application/json
+
+{"uId" : 1,"aId" : 1}
+
+
+
+###GET All surveys by admindId
+GET http://localhost:3001/api/admin/survey
+
+###GET All surveys
+GET http://localhost:3001/api/survey
+
+
+###GET UserName By Id
+GET http://localhost:3001/api/user/1
+
+###GET Questions By SurveyId
+GET http://localhost:3001/api/survey/2/question
+
+
+### GET CLOSED ANSWERS
+GET http://localhost:3001/api/question/4
+
+### ADD OPEN ANSWER BY USER
+POST http://localhost:3001/api/user/question/1
+Content-Type: application/json
+
+{"text" : "I'm 24", "uId" : 1}
+
+
+### GET ANSWER PER USER IN A SURVEY
+GET http://localhost:3001/api/user/3/2
+
+### GET ALL USERS PER SURVEY
+GET http://localhost:3001/api/users/survey/1
+
+### POST new survey
+POST http://localhost:3001/api/survey
+Content-Type: application/json
+
+{ 
+    "title" : "Hello",
+    "questions" : 
+        [
+        {"title" : "Do you practice sport?", "type" : "OPEN", "min": 1,  "max" : 1},
+        {"title" : "Do you watch sports on TV?", "type" : "OPEN", "min": 1,  "max" : 1},
+        {"title" : "Which team do you prefer among these?", "type" : "CLOSED", "min": 0,  "max" : 1, 
+        "answers":
+                            [
+                                { "text" : "" },
+                                { "text" : "Man City" },
+                                { "text" : "Liverpool" },
+                                { "text" : "Chelsea" }
+                           ]
+        }
+    ]
+}
+
+### POST SESSION
+
+POST http://localhost:3001/api/sessions 
+Content-Type: application/json  
+
+{"username": "mario", "password": "password" }
